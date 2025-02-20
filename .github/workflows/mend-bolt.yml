@@ -1,0 +1,19 @@
+name: Mend Bolt Security Scan
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  mend-bolt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Run Mend Bolt
+        uses: Mend-Security/bolt-action@v1
