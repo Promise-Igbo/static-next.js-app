@@ -7,11 +7,15 @@ ws.projectName=static-next.js-app
 # Package manager detection (specific to Next.js)
 ws.detect.packageManager=npm
 
-# Exclude unnecessary files and folders from scanning
-ws.filesToExclude=node_modules/**, .next/**, .vercel/**, public/**, out/**, test/**
+# Set minimum severity level for vulnerabilities (LOW, MEDIUM, HIGH, CRITICAL)
+ws.minSeverity=HIGH
 
-# Include relevant file types for scanning
-ws.includedFileExtensions=js, jsx, ts, tsx, json, css, scss
+# Notification settings (How you want to receive alerts)
+ws.notifications.githubIssues=true
+ws.notifications.email=false
+
+# Exclude unnecessary files and folders from scanning
+ws.filesToExclude=node_modules/**, .next/**, .vercel/**, test/**, public/**
 
 # Enable security and license scanning
 ws.scan.security=true
