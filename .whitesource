@@ -1,0 +1,21 @@
+# WhiteSource Configuration File for Next.js
+
+# Project Information
+ws.projectName=static-next.js-app
+# ws.organizationName=MyOrganization
+
+# Package manager detection (specific to Next.js)
+ws.detect.packageManager=npm
+
+# Exclude unnecessary files and folders from scanning
+ws.filesToExclude=node_modules/**, .next/**, .vercel/**, public/**, out/**, test/**
+
+# Include relevant file types for scanning
+ws.includedFileExtensions=js, jsx, ts, tsx, json, css, scss
+
+# Enable security and license scanning
+ws.scan.security=true
+ws.scan.licenses=true
+
+# Optional: Ignore DevDependencies (if you only want to scan production dependencies)
+ws.ignoreDevDependencies=true
